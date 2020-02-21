@@ -6,6 +6,7 @@ const helmet = require("helmet");
 const { NODE_ENV } = require("./config");
 const cardRouter = require("./card/card-router");
 const listRouter = require("./list/list-router");
+const logger = require("./logger");
 
 const app = express();
 
