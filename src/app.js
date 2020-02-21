@@ -16,14 +16,6 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-const lists = [
-  {
-    id: 1,
-    header: "List One",
-    cardIds: [1]
-  }
-];
-
 app.use(function validateBearerToken(req, res, next) {
   const apiToken = process.env.API_TOKEN;
   const authToken = req.get("Authorization");
